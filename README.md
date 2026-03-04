@@ -21,16 +21,16 @@ A machine learning-based web application that classifies SMS messages as spam or
 ## Project Structure
 
 ```
-sms-spam-classifier/
-├── spam-detection.ipynb          # Full training and evaluation notebook
-├── spam.csv                       # Dataset (5,574 SMS messages)
-├── sms-spam-classification/
-│   ├── app.py                    # Streamlit web application
-│   ├── model.pkl                 # Trained Naive Bayes model
-│   ├── vectorizer.pkl            # TF-IDF vectorizer
-│   ├── requirements.txt           # Python dependencies
-│   └── .gitignore
-└── README.md                      # This file
+
+sms-spam-classification/
+   ├── app.py                      # Streamlit web application
+   ├── spam-detection.ipynb        # Full training and evaluation notebook
+   ├── spam.csv                    # Dataset (5,574 SMS messages)
+   ├── model.pkl                   # Trained Naive Bayes model
+   ├── vectorizer.pkl              # TF-IDF vectorizer
+   ├── requirements.txt            # Python dependencies
+   ├── .gitignore
+   └── README.md                   # This file
 ```
 
 ## Installation
