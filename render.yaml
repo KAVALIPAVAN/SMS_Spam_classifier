@@ -1,8 +1,9 @@
 services:
   - type: web
     name: sms-spam-classifier
+    env: python
     buildCommand: pip install -r requirements.txt
     startCommand: streamlit run app.py --server.port $PORT --server.headless true --server.runOnSave false
     envVars:
-      - key: PYTHON_VERSION
-        value: 3.9
+      - key: PYTHONUNBUFFERED
+        value: 1
